@@ -26,7 +26,6 @@ public class PersonController {
     @GetMapping(value = {"/all"})
     public List<Person> findAll() {
         List<Person> list = personMapper.findAll();
-        System.out.println("list = " + list);
         return list;
     }
 
